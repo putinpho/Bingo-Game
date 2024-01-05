@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/findGameButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/main_menu_find_game"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/createGameButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+    <Button
+        android:id="@+id/createGameButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:textSize="20sp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/main_menu_create_game"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findGameButton" />
+
+    <Button
+        android:id="@+id/tutorialButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/main_menu_tutorial"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/settingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createGameButton" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialButton" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/main_menu_Sign_out"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

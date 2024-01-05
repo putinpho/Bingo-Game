@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".BackgroundSoundService"
+            android:enabled="true" />
+
+        <activity android:name=".GameInformation"/>
+        <activity android:name=".TutorialSelection"/>
+        <activity android:name=".BingoGamePlayer"/>
+        <activity android:name=".TutorialBoardSwap" />
+        <activity android:name=".MenuGameSettingOffline" />
+        <activity android:name=".PictureFromPreset" />
+        <activity android:name=".ChangeProfilePicture" />
+        <activity android:name=".GameSettingOffline" />
+        <activity android:name=".BingoGameOffline" />
+        <activity android:name=".SelectBoardOffline" />
+        <activity android:name=".MainMenuOffline" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".WinnerDisplayScreen" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".CreateUserAccount" />
+        <activity android:name=".MenuGameSetting" />
+        <activity android:name=".GameSetting" />
+        <activity android:name=".GameSettingHost" />
+        <activity android:name=".BingoGame" />
+        <activity android:name=".WaitingRoomPlayer" />
+        <activity android:name=".WaitingRoomHost" />
+        <activity android:name=".Tutorial" />
+        <activity android:name=".FindGame" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".UserAuthentication" />
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

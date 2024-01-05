@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/tutorialReturnButton"
+        android:layout_width="60dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/return_button" />
+
+    <TextView
+        android:id="@+id/tutorialText"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:text="@string/tutorial_selection_title"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <ImageView
+        android:id="@+id/tutorialBingoImage"
+        android:layout_width="168dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialBoardText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialBingoText"
+        app:srcCompat="@drawable/bingoboard" />
+
+    <TextView
+        android:id="@+id/tutorialBingoText"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:text="@string/basic_tutorial"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialBingoImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialText" />
+
+    <ImageButton
+        android:id="@+id/tutorialSwapButton"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialBoardText"
+        app:srcCompat="@drawable/refresh_button" />
+
+    <TextView
+        android:id="@+id/tutorialBoardText"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:text="@string/board_swapping"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialSwapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialBingoImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

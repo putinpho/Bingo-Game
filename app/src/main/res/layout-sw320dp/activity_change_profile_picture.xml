@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeProfilePicture">
+
+    <TextView
+        android:id="@+id/textChangeProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_profile_pic"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_button" />
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refreshButton" />
+
+    <Button
+        android:id="@+id/buttonFromPreset"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200px"
+        android:maxWidth="200px"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:text="@string/change_from_preset"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFromCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChangeProfilePicture" />
+
+    <Button
+        android:id="@+id/buttonForAlbum"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/change_from_album"
+        app:layout_constraintBottom_toTopOf="@+id/refreshButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFromCamera" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/refresh_button"
+        app:layout_constraintBottom_toTopOf="@+id/userAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonForAlbum" />
+
+    <Button
+        android:id="@+id/buttonFromCamera"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/change_from_cam"
+        app:layout_constraintBottom_toTopOf="@+id/buttonForAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFromPreset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

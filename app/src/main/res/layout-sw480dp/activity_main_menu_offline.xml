@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuOffline">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playGame"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/play_game"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tutorialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/returnWelcomeScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialButton" />
+
+    <Button
+        android:id="@+id/returnWelcomeScreen"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/back_title_screen"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingButton" />
+
+    <Button
+        android:id="@+id/tutorialButton"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:text="@string/main_menu_tutorial"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/settingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playGame" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

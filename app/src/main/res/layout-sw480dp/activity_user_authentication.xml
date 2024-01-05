@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAuthentication">
+
+    <EditText
+        android:id="@+id/emailAddressField"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:ems="10"
+        android:hint="@string/EText_email_add"
+        android:inputType="textEmailAddress"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:ems="10"
+        android:hint="@string/EText_password"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkRememberMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddressField" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="@string/user_auth_sign_in"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkRememberMe" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:text="@string/create_acc"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_auth_title"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/passwordReset"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="@string/user_auth_forgot_pass"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/returnWelcomeScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
+
+    <Button
+        android:id="@+id/returnWelcomeScreen"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="@string/back_title_screen"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordReset" />
+
+    <CheckBox
+        android:id="@+id/chkRememberMe"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:text="@string/user_auth_remember_me"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/signInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

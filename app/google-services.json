@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698556829697",
+    "firebase_url": "https://bingo-c540b-default-rtdb.firebaseio.com",
+    "project_id": "bingo-c540b",
+    "storage_bucket": "bingo-c540b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698556829697:android:193ec2134c55420f717000",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698556829697-f8ongbt0hjeloh80aashu9maaalat6mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyTXvbJsc1TBkZxWgC_veilFEKbBxFb3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698556829697-f8ongbt0hjeloh80aashu9maaalat6mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

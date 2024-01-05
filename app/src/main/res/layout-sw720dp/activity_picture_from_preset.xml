@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PictureFromPreset">
+
+    <TextView
+        android:id="@+id/textPictureFromPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_pic_preset"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="115dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/return_button" />
+
+    <ImageView
+        android:id="@+id/Avatar1"
+        android:layout_width="237dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="504dp"
+        android:layout_marginRight="504dp"
+        android:layout_marginBottom="798dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_1" />
+
+    <ImageView
+        android:id="@+id/Avatar2"
+        android:layout_width="237dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="535dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="798dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_2" />
+
+    <ImageView
+        android:id="@+id/Avatar3"
+        android:layout_width="237dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="712dp"
+        android:layout_marginEnd="513dp"
+        android:layout_marginRight="513dp"
+        android:layout_marginBottom="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_3" />
+
+    <ImageView
+        android:id="@+id/Avatar4"
+        android:layout_width="237dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="535dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="712dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_4" />
+
+    <Button
+        android:id="@+id/chooseAvatarButton1"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="504dp"
+        android:layout_marginRight="504dp"
+        android:layout_marginBottom="675dp"
+        android:text="@string/profile_pic_this"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar1" />
+
+    <Button
+        android:id="@+id/chooseAvatarButton4"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="535dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="213dp"
+        android:text="@string/profile_pic_this"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar4" />
+
+    <Button
+        android:id="@+id/chooseAvatarButton2"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="535dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="673dp"
+        android:text="@string/profile_pic_this"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar2" />
+
+    <Button
+        android:id="@+id/chooseAvatarButton3"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="504dp"
+        android:layout_marginRight="504dp"
+        android:text="@string/profile_pic_this"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
